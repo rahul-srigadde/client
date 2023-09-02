@@ -1,0 +1,237 @@
+/*
+Common scss file
+*/
+
+* {
+  outline: none !important;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #3f4756;
+}
+
+body {
+  background-image: url('./assests/Background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hamBurgerMainContainer {
+  background-image: url('./assests/Background.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.scroll_lock {
+  overflow: hidden;
+}
+
+.hide_loader {
+  display: none;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes donut-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.donut {
+  display: block;
+  margin-top: 10%;
+  margin-left: 50%;
+  color: '#fff';
+  border: 4px solid #ffffff;
+  border-left-color: #0988c4;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  z-index: 1px;
+  animation: donut-spin 1.2s linear infinite;
+}
+
+.donut2 {
+  display: block;
+  margin-right: 5px;
+  color: '#fff';
+  border: 4px solid #ffffff;
+  border-left-color: #0988c4;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  z-index: 1px;
+  animation: donut-spin 1.2s linear infinite;
+}
+
+.donut1 {
+  display: block;
+  color: '#fff';
+  border: 4px solid #ffffff;
+  border-left-color: #0988c4;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  z-index: 1px;
+  animation: donut-spin 1.2s linear infinite;
+}
+
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+#Search {
+  outline: 0;
+}
+
+#Search::-webkit-search-cancel-button {
+  position: relative;
+  background-image: url('./assests/Background.png');
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.field_error_styles {
+  .MuiInput-underline:before {
+    border-bottom: 1px solid #ea1515;
+  }
+  .MuiInput-underline:after {
+    border-bottom: 1px solid #ea1515;
+  }
+  .MuiInput-underline:hover::before {
+    border-bottom: 2px solid #ea1515 !important;
+  }
+  .MuiCheckbox-root ~ .field_error_msg_styles {
+    color: #ea1515;
+    font-size: 12px;
+    padding: 0 0 4px;
+  }
+  .field_error_msg_styles {
+    color: #ea1515;
+    font-size: 12px;
+    padding: 4px 0;
+  }
+}
+
+.info__container {
+  display: flex;
+}
+.info__cell {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.info__cell_label {
+  color: #adb4b7;
+}
+.info__cell_value {
+  color: #3f4756;
+  font-weight: 500;
+}
+.separator {
+  width: 1px;
+  height: 30px;
+  margin-top: 5px;
+  background: #adb4b7;
+}
+.display_flex {
+  display: flex;
+}
+.display_flex_col {
+  display: flex;
+  flex-direction: column;
+}
+.space_between {
+  display: flex;
+  justify-content: space-between;
+}
+.sub_label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.margin_bottom_40 {
+  margin-bottom: 40px;
+}
+.breadcrumb {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  display: flex;
+}
+.breadcrumbLabel {
+  font-family: Roboto, sans-serif;
+  color: #3f4756 !important;
+  font-size: 16px;
+  cursor: pointer;
+}
+.activeBreadcrumb {
+  font-weight: 500;
+}
+.arrowIcon {
+  cursor: pointer;
+  width: 20px;
+}
+.align_items {
+  display: flex;
+  align-items: center;
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #b9babd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  -webkit-scrollbar-thumb: {
+    background: green;
+  }
+}
+
+.linkStyles .MuiTypography-colorPrimary {
+  color: #047abc;
+}

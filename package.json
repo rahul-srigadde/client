@@ -1,0 +1,52 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "peerDependencies": {
+    "@material-ui/core": "^4.9.2"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "4.9.1",
+    "@material-ui/lab": "4.0.0-alpha.45",
+    "@material-ui/pickers": "3.2.10",
+    "@material-ui/styles": "^4.11.4",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "0.19.2",
+    "formik": "2.1.4",
+    "material-table": "1.69.0",
+    "react": ">= 16.8.0",
+    "react-dom": "^16.3.0",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "4.0.3",
+    "sass": "1.26.3",
+    "web-vitals": "^1.0.1",
+    "yup": "0.29.3"
+  },
+  "scripts": {
+    "start": " set PORT=6251 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
